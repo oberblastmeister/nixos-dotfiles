@@ -6,6 +6,7 @@
     ];
 
   # Use the systemd-boot EFI boot loader.
+  # uncomment stuff for efi
   boot.loader = {
     systemd-boot.enable = false;
     /* efi = { */
@@ -97,6 +98,4 @@
     extraGroups = [ "wheel" "video" "networkmanager" "vboxusers" "docker" ];
     shell = pkgs.zsh;
   };
-
-  system.stateVersion = "21.05";
 }
