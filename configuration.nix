@@ -87,8 +87,8 @@
   };
 
   # Enable gnome-keyring for geary.
-  services.gnome.gnome-keyring.enable = true;
-  security.pam.services.sddm.enableGnomeKeyring = true;
+  # services.gnome.gnome-keyring.enable = true;
+  # security.pam.services.sddm.enableGnomeKeyring = true;
 
   # Enable flatpaks.
   services.flatpak.enable = true;
