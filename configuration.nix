@@ -5,9 +5,6 @@
       ./hardware-configuration.nix
     ];
 
-  # Use 5.10 kernel.
-  boot.kernelPackages = pkgs.linuxPackages_5_10;
-
   # Use the systemd-boot EFI boot loader.
   boot.loader = {
     systemd-boot.enable = false;
