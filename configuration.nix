@@ -11,16 +11,17 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader = {
     systemd-boot.enable = false;
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
-    };
+    /* efi = { */
+    /*   canTouchEfiVariables = true; */
+    /*   efiSysMountPoint = "/boot/efi"; */
+    /* }; */
     grub = {
       enable = true;
       version = 2;
-      device = "nodev";
-      efiSupport = true;
-      useOSProber = true;
+      /* device = "nodev"; */
+      device = "/dev/sda1";
+      /* efiSupport = true; */
+      /* useOSProber = true; */
     };
   };
 
