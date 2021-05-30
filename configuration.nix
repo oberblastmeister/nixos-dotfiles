@@ -16,7 +16,7 @@
       enable = true;
       version = 2;
       /* device = "nodev"; */
-      device = "/dev/sda1";
+      device = "/dev/sda";
       /* efiSupport = true; */
       /* useOSProber = true; */
     };
@@ -32,8 +32,6 @@
   # Packages installed in system profile.
   environment.systemPackages = with pkgs; [
     git
-    latte-dock
-    unzip
     vim
     wget
   ];
