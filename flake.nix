@@ -13,7 +13,7 @@
     nix-doom-emacs.url = "github:vlaci/nix-doom-emacs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-doom-emacs, ... }@inputs:
     let
       overlays = [
         inputs.neovim-nightly-overlay.overlay
