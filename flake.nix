@@ -13,7 +13,7 @@
     nix-doom-emacs.url = "github:vlaci/nix-doom-emacs";
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-doom-emacs, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       overlays = [
         inputs.neovim-nightly-overlay.overlay
@@ -26,13 +26,13 @@
           modules = [
             ./configuration.nix
 
-            home-manager.nixosModules.home-manager
-            {
-              nixpkgs.overlays = overlays;
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.brian = import ./home;
-            }
+            # home-manager.nixosModules.home-manager
+            # {
+            #   nixpkgs.overlays = overlays;
+            #   home-manager.useGlobalPkgs = true;
+            #   home-manager.useUserPackages = true;
+            #   home-manager.users.brian = import ./home;
+            # }
           ];
         };
       };
