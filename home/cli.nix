@@ -23,7 +23,7 @@
     ripgrep # better grep, needed for fzf
     ripgrep-all
     broot
-    bottom-bin
+    bottom
     zoxide
     pandoc # convert different files
     translate-shell
