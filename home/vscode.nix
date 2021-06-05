@@ -5,8 +5,9 @@
     enable = true;
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
-      sainnhe.gruvbox-material
-      asvetliakov.vscode-neovim
+      matklad.rust-analyzer
+      haskell.haskell
+      ms-python.python
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
     ];
   };
