@@ -9,9 +9,9 @@
     # nix-doom-emacs.hmModule
   ];
 
-  programs.doom-emacs = {
-    enable = true;
-  };
+  /* programs.doom-emacs = { */
+  /*   enable = true; */
+  /* }; */
 
   home.packages = with pkgs; [
     (nerdfonts.override {
