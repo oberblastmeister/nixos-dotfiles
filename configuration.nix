@@ -34,7 +34,9 @@
   environment.systemPackages = with pkgs; [
     git
     vim
+    curl
     wget
+    coreutils
   ];
 
   # Configure the nix package manager.
@@ -98,4 +100,6 @@
     extraGroups = [ "wheel" "video" "networkmanager" "vboxusers" "docker" ];
     shell = pkgs.zsh;
   };
+
+  system.stateVersion = "21.05";
 }
