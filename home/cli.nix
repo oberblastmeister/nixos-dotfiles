@@ -10,7 +10,6 @@
 
   home.packages = with pkgs; [
     bat
-    bat-extras
 
     fd
     lf # lf file manager
