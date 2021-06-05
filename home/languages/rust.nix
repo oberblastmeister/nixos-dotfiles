@@ -7,6 +7,5 @@
     cargo-expand
     cargo-watch
     cargo-cross
-    rust-analyzer
   ];
 }
