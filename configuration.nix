@@ -43,7 +43,6 @@
   # Configure the nix package manager.
   nix = {
     package = pkgs.nixFlakes;
-    maxJobs = lib.mkDefault 24;
     autoOptimiseStore = true;
     trustedUsers = [ "root" "brian" "@wheel" ];
     extraOptions = ''
@@ -85,6 +84,10 @@
     enable = true;
     enableNvidia = true;
   };
+
+  # Enable virtualbox
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.sddm.enableGnomeKeyring = true;
