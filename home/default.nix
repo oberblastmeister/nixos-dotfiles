@@ -6,7 +6,12 @@
     ./cli.nix
     ./vscode.nix
     ./neovim.nix
+    nix-doom-emacs.hmModule
   ];
+
+  programs.doom-emacs = {
+    enable = true;
+  };
 
   home.packages = with pkgs; [
     (nerdfonts.override {

@@ -1,14 +1,16 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    # nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-21.05";
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      # url = "path:/Users/michael/Repositories/nix/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+
+    nix-doom-emacs.url = "github:vlaci/nix-doom-emacs";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
