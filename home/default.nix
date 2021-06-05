@@ -5,5 +5,5 @@
     ./cli.nix
   ];
 
-  home.stateVersion = config.system.stateVersion;
+  home.stateVersion = "21.05";
 }
