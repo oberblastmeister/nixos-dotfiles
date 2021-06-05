@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./languages
     ./cli.nix
     ./vscode.nix
   ];
