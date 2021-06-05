@@ -26,13 +26,13 @@
           modules = [
             ./configuration.nix
 
-            # home-manager.nixosModules.home-manager
-            # {
-            #   nixpkgs.overlays = overlays;
-            #   home-manager.useGlobalPkgs = true;
-            #   home-manager.useUserPackages = true;
-            #   home-manager.users.brian = import ./home;
-            # }
+            home-manager.nixosModules.home-manager
+            {
+              nixpkgs.overlays = overlays;
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.brian = import ./home;
+            }
           ];
         };
       };

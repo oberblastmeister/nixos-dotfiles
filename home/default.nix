@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ./languages
-    ./cli.nix
-    ./vscode.nix
-    ./neovim.nix
+    # ./languages
+    # ./cli.nix
+    # ./vscode.nix
+    # ./neovim.nix
     # nix-doom-emacs.hmModule
   ];
 
