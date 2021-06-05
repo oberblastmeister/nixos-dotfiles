@@ -7,10 +7,7 @@
     ./vscode.nix
   ];
 
-  fonts.fonts = with pkgs; [
-    noto-fonts
-    noto-fonts-emoji
-
+  home.packages = [
     (nerdfonts.override {
       fonts = [
         "FiraCode"

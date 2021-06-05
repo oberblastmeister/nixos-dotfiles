@@ -28,6 +28,18 @@
   networking.hostName = "nixos-desktop";
   networking.networkmanager.enable = true;
 
+  fonts = {
+    fontDir.enable = true;
+    fonts = with pkgs; [
+      noto-fonts
+      noto-fonts-emoji
+    ];
+    fontconfig.defaultFonts = {
+        sansSerif = [ "Noto Sans" ];
+        monospace = [ "Noto Mono" ];
+    };
+  };
+
   # Set your time zone.
   services.localtime.enable = true;
 
