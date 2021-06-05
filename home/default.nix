@@ -5,6 +5,7 @@
     ./languages
     ./cli.nix
     ./vscode.nix
+    ./neovim.nix
   ];
 
   home.packages = with pkgs; [
