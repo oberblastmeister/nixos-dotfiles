@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
 
+# do not use programs vscode, fails
+
 let
   extensions = (with pkgs.vscode-extensions; [
     bbenoist.Nix

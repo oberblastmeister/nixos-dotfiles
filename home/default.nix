@@ -9,6 +9,8 @@
     # nix-doom-emacs.hmModule
   ];
 
+  programs.man.enable = false;
+
   /* programs.doom-emacs = { */
   /*   enable = true; */
   /* }; */
