@@ -6,7 +6,7 @@
     ./cli.nix
     ./vscode.nix
     ./neovim.nix
-    nix-doom-emacs.hmModule
+    # nix-doom-emacs.hmModule
   ];
 
   programs.doom-emacs = {
