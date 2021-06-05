@@ -11,9 +11,9 @@ let
 in
 {
   home.packages = with pkgs; [
-    vscode-with-extensions.override
-    {
-      vscodeExtensions = extensions;
-    }
+    (vscode-with-extensions.override
+      {
+        vscodeExtensions = extensions;
+      })
   ];
 }
