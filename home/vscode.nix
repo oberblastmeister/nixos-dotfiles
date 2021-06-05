@@ -1,14 +1,19 @@
 { config, pkgs, ... }:
 
+let
+  extensions = (with pkgs.vscode-extensions; [
+    bbenoist.Nix
+    matklad.rust-analyzer
+    haskell.haskell
+    ms-python.python
+  ]) ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+  ];
+in
 {
-  # programs.vscode = {
-  #   enable = true;
-  #   package = pkgs.vscodium;
-  #   extensions = with pkgs.vscode-extensions; [
-  #     matklad.rust-analyzer
-  #     haskell.haskell
-  #     ms-python.python
-  #   ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-  #   ];
-  # };
+  home.packages = with pkgs; [
+    vscode-with-extensions.override
+    {
+      vscodeExtensions = extensions;
+    }
+  ];
 }
