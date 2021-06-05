@@ -24,6 +24,8 @@
     };
   };
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # Enable networking.
   networking.hostName = "nixos-desktop";
   networking.networkmanager.enable = true;
