@@ -28,5 +28,9 @@
     shellcheck
   ];
   
-  xdg.configFile."nvim".source = ./files/.config/neovim;
+  xdg.configFile = {
+    "nvim" = {
+        source = ./files/.config/nvim;
+    };
+  };
 }
