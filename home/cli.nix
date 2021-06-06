@@ -6,20 +6,25 @@
       enable = true;
       enableZshIntegration = true;
     };
-    zsh = {
-      sessionVariables = {
-        EDITOR = "nvim";
-        VISUAL = "nvim";
-        TERMINAL = "alacritty";
-        BROWSER = "firefox";
-        PAGER = "less";
-        MANPAGER = "nvim +Man";
-      };
-    };
+    /* zsh = { */
+    /*   sessionVariables = { */
+    /*     EDITOR = "nvim"; */
+    /*     VISUAL = "nvim"; */
+    /*     TERMINAL = "alacritty"; */
+    /*     BROWSER = "firefox"; */
+    /*     PAGER = "less"; */
+    /*     MANPAGER = "nvim +Man"; */
+    /*   }; */
+    /* }; */
   };
 
   xdg.configFile = {
     "starship.toml".source = ../files/.config/starship/starship.toml;
+    "zsh".source = ../files/.config/zsh;
+  };
+
+  home.file = {
+    ".zshenv".source = ../files/.zshenv;
   };
 
   home.packages = with pkgs; [

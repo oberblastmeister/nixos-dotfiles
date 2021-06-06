@@ -38,17 +38,15 @@
   /*   MANPAGER = "nvim +Man"; */
   /* }; */
 
-  home.sessionPath = [
-    "$HOME/.cargo/bin"
-    "${config.xdg.dataHome}/bin"
-    "./node_modules/.bin"
-  ];
+  /* home.sessionPath = [ */
+  /*   "$HOME/.cargo/bin" */
+  /*   "${config.xdg.dataHome}/bin" */
+  /*   "./node_modules/.bin" */
+  /* ]; */
 
   home.stateVersion = "21.05";
 
   home.file = {
-    "bin" = {
-      source = ../files/bin;
-    };
+    "bin".source = ../files/bin;
   };
 }
