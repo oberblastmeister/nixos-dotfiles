@@ -6,4 +6,4 @@ git config --global user.email "install-bot@users.noreply"
 git add .
 git commit -am "bot add"
 
-nixos-install --root /mnt --flake '/mnt/etc/nixos#nixos-desktop'
+nixos-install --root /mnt --flake '/mnt/etc/nixos#nixos-desktop' --impure
