@@ -29,6 +29,6 @@
 
   home.activation.stow = config.lib.dag.entryAfter [ "writeBoundary" ] ''
     cd /etc/nixos
-    stow --target=$HOME stowed
+    stow --target=$HOME --adopt stowed
   '';
 }
