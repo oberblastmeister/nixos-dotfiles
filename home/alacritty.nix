@@ -1,9 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  programs.alacritty = {
-    enable = true;
-  };
+  home.packages = with pkgs; [
+    alacritty
+  ];
 
   xdg.configFile."alacritty/alacritty.yml".source = ../files/.config/alacritty/alacritty.yml;
 }
