@@ -26,7 +26,15 @@
     })
   ];
 
-  home.sessionVariables = {
+  /* home.sessionVariables = { */
+  /*   EDITOR = "nvim"; */
+  /*   VISUAL = "nvim"; */
+  /*   TERMINAL = "alacritty"; */
+  /*   BROWSER = "firefox"; */
+  /*   PAGER = "less"; */
+  /*   MANPAGER = "nvim +Man"; */
+  /* }; */
+  zsh.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
     TERMINAL = "alacritty";
@@ -35,7 +43,11 @@
     MANPAGER = "nvim +Man";
   };
 
-  home.sessionPath = [ ];
+  home.sessionPath = [
+    "$HOME/.cargo/bin"
+    "${config.xdg.dataHome}/bin"
+    "./node_modules/.bin"
+  ];
 
   home.stateVersion = "21.05";
 }

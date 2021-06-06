@@ -22,6 +22,12 @@
     polybarFull
 
     arandr
+
+    # chat
+    discord
+    element-desktop
+
+    rofi
   ];
 
   programs = {
@@ -44,6 +50,10 @@
     redshift = {
       enable = true;
       provider = "geoclue2";
+    };
+
+    picom = {
+      enable = true;
     };
   };
 }
