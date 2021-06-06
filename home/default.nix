@@ -8,6 +8,7 @@
     ./neovim.nix
     ./git.nix
     ./gui.nix
+    ./alacritty.nix
     # nix-doom-emacs.hmModule
   ];
 
