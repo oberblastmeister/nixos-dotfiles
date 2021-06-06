@@ -37,5 +37,7 @@
 
     gh
     unclutter
+
+    starship
   ];
 }

@@ -118,7 +118,7 @@
     isNormalUser = true;
     createHome = true;
     uid = 1000;
-    extraGroups = [ "wheel" "video" "networkmanager" "vboxusers" "docker" ];
+    extraGroups = [ "wheel" "video" "audio" "networkmanager" "vboxusers" "docker" ];
     shell = pkgs.zsh;
   };
 

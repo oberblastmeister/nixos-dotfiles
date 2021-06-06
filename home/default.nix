@@ -7,6 +7,7 @@
     ./vscode.nix
     ./neovim.nix
     ./git.nix
+    ./gui.nix
     # nix-doom-emacs.hmModule
   ];
 
