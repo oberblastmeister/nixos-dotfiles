@@ -45,4 +45,10 @@
   ];
 
   home.stateVersion = "21.05";
+
+  home.file = {
+    "bin" = {
+      source = ../files/bin;
+    };
+  };
 }

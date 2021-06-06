@@ -18,6 +18,10 @@
     };
   };
 
+  xdg.configFile = {
+    "starship.toml".source = ../files/.config/starship/starship.toml;
+  };
+
   home.packages = with pkgs; [
     bat
 
