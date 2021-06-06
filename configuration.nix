@@ -51,6 +51,7 @@
     vim
     curl
     wget
+    sxhkd
   ];
 
   # Configure the nix package manager.
@@ -82,7 +83,12 @@
     enable = true;
     enableHidpi = true;
   };
-  services.xserver.desktopManager.plasma5.enable = true;
+  /* services.xserver.desktopManager.plasma5.enable = true; */
+
+  services.xserver.desktopManager = {
+    plasma5.enable = true;
+    bspwm.enable = true;
+  };
 
   # Enable OpenGL.
   hardware.opengl = {
