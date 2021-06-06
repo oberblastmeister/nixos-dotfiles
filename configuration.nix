@@ -28,15 +28,13 @@
 
   # Enable networking.
   networking = {
-    hostname = "nixos-desktop";
+    hostName = "nixos-desktop";
     networkmanager.enable = true;
   };
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
-  /* networking.hostName = "nixos-desktop"; */
-  /* networking.networkmanager.enable = true; */
 
   # fonts = {
   #   fontDir.enable = true;
