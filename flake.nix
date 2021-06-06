@@ -9,8 +9,6 @@
     };
 
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-
-    nix-doom-emacs.url = "github:vlaci/nix-doom-emacs";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
