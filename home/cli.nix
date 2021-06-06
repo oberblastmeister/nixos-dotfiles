@@ -6,6 +6,16 @@
       enable = true;
       enableZshIntegration = true;
     };
+    zsh = {
+      sessionVariables = {
+        EDITOR = "nvim";
+        VISUAL = "nvim";
+        TERMINAL = "alacritty";
+        BROWSER = "firefox";
+        PAGER = "less";
+        MANPAGER = "nvim +Man";
+      };
+    };
   };
 
   home.packages = with pkgs; [
