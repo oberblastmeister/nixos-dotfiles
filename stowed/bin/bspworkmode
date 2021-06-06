@@ -1,0 +1,12 @@
+#!/bin/sh
+
+window_gap=$(bspc config window_gap)
+small_gap=10
+
+if [ "$window_gap" -gt $small_gap ]; then
+    bspc config window_gap $small_gap
+    polybar-toggle hide
+else
+    bspc config window_gap 55
+    polybar-toggle show
+fi
