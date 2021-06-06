@@ -24,5 +24,7 @@
 
     ocamlPackages.ocaml-lsp
     ocamlformat
+
+    shellcheck
   ];
 }
