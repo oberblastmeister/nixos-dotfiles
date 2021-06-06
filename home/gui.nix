@@ -18,7 +18,7 @@
     peek
 
     xfce.xfce4-power-manager
-    
+
     polybarFull
   ];
 
@@ -37,6 +37,10 @@
     };
 
     dunst = {
+      enable = true;
+    };
+
+    redshift = {
       enable = true;
     };
   };
