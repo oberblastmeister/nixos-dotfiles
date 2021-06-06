@@ -18,8 +18,6 @@
     peek
 
     xfce.xfce4-power-manager
-
-    syncthing-gtk
   ];
 
   programs = {
