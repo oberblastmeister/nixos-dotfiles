@@ -123,4 +123,7 @@
   };
 
   system.stateVersion = "21.05";
+
+  # allow locations
+  services.geoclue2.enable = true;
 }

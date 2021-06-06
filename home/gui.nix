@@ -42,6 +42,7 @@
 
     redshift = {
       enable = true;
+      provider = "geoclue2";
     };
   };
 }
