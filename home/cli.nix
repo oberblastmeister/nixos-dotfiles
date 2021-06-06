@@ -39,5 +39,7 @@
     unclutter
 
     starship
+
+    glow
   ];
 }

@@ -2,8 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    dunst
-    polybarFull
     gnome.networkmanagerapplet
     lxappearance
 
@@ -13,6 +11,15 @@
     zathura # pdf
     mpv # video
 
+    # gui file manager
+    gnome.nautilus
+
+    # gifs
+    peek
+
+    xfce.xfce4-power-manager
+
+    syncthing-gtk
   ];
 
   programs = {
@@ -23,5 +30,18 @@
 
   services = {
     flameshot.enable = true;
+
+    syncthing = {
+      enable = true;
+      tray.enable = true;
+    };
+
+    polybar = {
+      enable = true;
+    };
+
+    dunst = {
+      enable = true;
+    };
   };
 }
