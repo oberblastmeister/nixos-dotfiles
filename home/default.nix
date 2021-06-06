@@ -26,4 +26,9 @@
   ];
 
   home.stateVersion = "21.05";
+
+  home.activation.stow = dag.entryAfter [ "writeBoundary" ] ''
+    cd /etc/nixos
+    stow --target=$HOME stowed
+  '';
 }

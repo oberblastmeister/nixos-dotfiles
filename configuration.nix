@@ -58,6 +58,7 @@
     curl
     wget
     sxhkd
+    stow
   ];
 
   # Configure the nix package manager.
