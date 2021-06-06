@@ -5,5 +5,5 @@
     enable = true;
   };
 
-  xdg.configFile."alacritty".source = ../files/.config/alacritty/alacritty.yml;
+  xdg.configFile."alacritty/alacritty.yml".source = ../files/.config/alacritty/alacritty.yml;
 }
