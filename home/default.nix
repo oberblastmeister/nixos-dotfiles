@@ -6,6 +6,7 @@
     ./cli.nix
     ./vscode.nix
     ./neovim.nix
+    ./git.nix
     # nix-doom-emacs.hmModule
   ];
 
