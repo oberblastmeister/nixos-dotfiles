@@ -5,5 +5,5 @@
     enable = true;
   };
 
-  xdg.configFile."nvim".source = ../files/.config/alacritty/alacritty.yml;
+  xdg.configFile."alacritty".source = ../files/.config/alacritty/alacritty.yml;
 }
