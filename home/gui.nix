@@ -19,8 +19,6 @@
 
     xfce.xfce4-power-manager
 
-    polybarFull
-
     arandr
 
     # chat

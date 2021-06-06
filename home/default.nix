@@ -11,6 +11,7 @@
     ./alacritty.nix
     ./bspwm.nix
     ./rofi.nix
+    ./polybar.nix
     # nix-doom-emacs.hmModule
   ];
 
