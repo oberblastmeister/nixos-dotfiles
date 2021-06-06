@@ -7,10 +7,19 @@
     gnome.networkmanagerapplet
     lxappearance
 
-	# viewers
-	feh     # background setter and image viewer
-	sxiv    # image
-	zathura # pdf
-	mpv # video
+    # viewers
+    feh # background setter and image viewer
+    sxiv # image
+    zathura # pdf
+    mpv # video
+
   ];
+
+  programs = {
+    firefox = {
+      enable = true;
+    };
+
+    flameshot.enable = true;
+  };
 }
