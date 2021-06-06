@@ -19,7 +19,9 @@
     firefox = {
       enable = true;
     };
+  };
 
+  services = {
     flameshot.enable = true;
   };
 }
