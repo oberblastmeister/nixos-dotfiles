@@ -9,6 +9,7 @@
     ./git.nix
     ./gui.nix
     ./alacritty.nix
+    ./bspwm.nix
     # nix-doom-emacs.hmModule
   ];
 
