@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -28,9 +28,5 @@
     shellcheck
   ];
   
-  xdg.configFile = {
-    "nvim" = {
-        source = ../files/.config/nvim;
-    };
-  };
+  xdg.configfile."nvim".source = ../files/.config/nvim;
 }
