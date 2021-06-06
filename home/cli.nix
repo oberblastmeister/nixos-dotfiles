@@ -35,7 +35,6 @@
     tmux
     udiskie
 
-    gh
     unclutter
 
     starship

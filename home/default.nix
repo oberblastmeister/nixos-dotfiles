@@ -26,5 +26,14 @@
     })
   ];
 
+  home.sesionVariables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+    TERMINAL = "alacritty";
+    BROWSER = "firefox";
+    PAGER = "less";
+    MANPAGER = "nvim +Man";
+  };
+
   home.stateVersion = "21.05";
 }
