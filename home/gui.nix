@@ -26,8 +26,6 @@
     # chat
     discord
     element-desktop
-
-    rofi
   ];
 
   programs = {

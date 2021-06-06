@@ -10,6 +10,7 @@
     ./gui.nix
     ./alacritty.nix
     ./bspwm.nix
+    ./rofi.nix
     # nix-doom-emacs.hmModule
   ];
 
