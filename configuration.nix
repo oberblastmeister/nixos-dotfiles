@@ -81,8 +81,13 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.layout = "us";
+  services.xserver = {
+    enable = true;
+    layout = "us";
+    libinput = {
+      enable = true;
+    };
+  };
 
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.sddm = {
