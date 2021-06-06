@@ -18,6 +18,8 @@
     peek
 
     xfce.xfce4-power-manager
+    
+    polybarFull
   ];
 
   programs = {
@@ -32,10 +34,6 @@
     syncthing = {
       enable = true;
       tray.enable = true;
-    };
-
-    polybar = {
-      enable = true;
     };
 
     dunst = {
