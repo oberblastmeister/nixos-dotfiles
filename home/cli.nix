@@ -34,5 +34,8 @@
     xclip
     tmux
     udiskie
+
+    gh
+    unclutter
   ];
 }

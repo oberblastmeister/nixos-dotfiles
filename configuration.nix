@@ -27,8 +27,16 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Enable networking.
-  networking.hostName = "nixos-desktop";
-  networking.networkmanager.enable = true;
+  networking = {
+    hostname = "nixos-desktop";
+    networkmanager.enable = true;
+  };
+
+  # Enable bluetooth
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
+  /* networking.hostName = "nixos-desktop"; */
+  /* networking.networkmanager.enable = true; */
 
   # fonts = {
   #   fontDir.enable = true;
