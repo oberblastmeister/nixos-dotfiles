@@ -30,7 +30,7 @@
   
   xdg.configFile = {
     "nvim" = {
-        source = ./files/.config/nvim;
+        source = ../files/.config/nvim;
     };
   };
 }
