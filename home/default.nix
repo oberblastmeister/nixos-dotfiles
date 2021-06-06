@@ -26,7 +26,7 @@
     })
   ];
 
-  home.sesionVariables = {
+  home.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
     TERMINAL = "alacritty";
