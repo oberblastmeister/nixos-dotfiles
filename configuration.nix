@@ -83,19 +83,14 @@
     enable = true;
     enableHidpi = true;
   };
-  /* services.xserver.desktopManager.plasma5.enable = true; */
 
-  services.xserver.desktopManager = {
-    plasma5.enable = true;
-    bspwm.enable = true;
-  };
+  services.xserver.desktopManager.plasma5.enable = true;
+
+  services.xserver.windowManager.bspwm.enable = true;
 
   # Enable OpenGL.
   hardware.opengl = {
     enable = true;
-    driSupport32Bit = true;
-    extraPackages32 = with pkgs.pkgsi686Linux; [ libva ];
-    setLdLibraryPath = true;
   };
 
   # Enable Docker.
