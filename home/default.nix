@@ -35,5 +35,7 @@
     MANPAGER = "nvim +Man";
   };
 
+  home.sessionPath = [ ];
+
   home.stateVersion = "21.05";
 }
