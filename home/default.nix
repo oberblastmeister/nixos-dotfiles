@@ -34,14 +34,6 @@
   /*   PAGER = "less"; */
   /*   MANPAGER = "nvim +Man"; */
   /* }; */
-  zsh.sessionVariables = {
-    EDITOR = "nvim";
-    VISUAL = "nvim";
-    TERMINAL = "alacritty";
-    BROWSER = "firefox";
-    PAGER = "less";
-    MANPAGER = "nvim +Man";
-  };
 
   home.sessionPath = [
     "$HOME/.cargo/bin"
