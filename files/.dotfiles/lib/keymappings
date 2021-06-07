@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # put this script in /usr/lib/systemd/system-sleep/ or /lib/systemd/system-sleep/example.sh for debian/ubuntu
 

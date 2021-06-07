@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # stable
 setxkbmap -option ctrl:nocaps

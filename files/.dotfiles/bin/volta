@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 curl https://get.volta.sh | bash
 export VOLTA_HOME="/home/brian/.volta"
