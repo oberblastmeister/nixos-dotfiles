@@ -22,8 +22,6 @@ laptopconfigs() {
 }
 
 configs() {
-    xrdb ~/.Xresources &
-
     xset r rate 500 50 &
 
     setxkbmap -option ctrl:nocaps &

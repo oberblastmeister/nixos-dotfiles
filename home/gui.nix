@@ -24,6 +24,8 @@
     # chat
     discord
     element-desktop
+
+    system-config-printer
   ];
 
   programs = {

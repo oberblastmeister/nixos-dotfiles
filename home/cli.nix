@@ -61,5 +61,7 @@
     starship
 
     glow
+
+    haskellPackages.greenclip
   ];
 }
