@@ -4,6 +4,7 @@
 # ------------------- Bspwm Settings ------------------
 # -----------------------------------------------------
 sxhkd &
+echo 'ran' >> ~/bsp.log
 
 # bspc monitor -d I II III IV V VI VII VIII IX X
 # bspc monitor -d I II III IV V VI
