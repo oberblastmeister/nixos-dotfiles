@@ -8,10 +8,10 @@
     ./neovim.nix
     ./git.nix
     ./gui.nix
-    /* ./alacritty.nix */
-    /* ./bspwm.nix */
-    /* ./rofi.nix */
-    /* ./polybar.nix */
+    ./alacritty.nix
+    ./bspwm.nix
+    ./rofi.nix
+    ./polybar.nix
     # nix-doom-emacs.hmModule
   ];
 
