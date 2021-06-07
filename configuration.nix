@@ -92,7 +92,10 @@
   };
 
   services.xserver = {
-      windowManager.bspwm.enable = true;
+      windowManager.bspwm = {
+          enable = true;
+          sxhkd.configFile = "/home/brian/.config/sxhkd/sxhkdrc";
+      };
       desktopManager.xfce = {
         enable = true;
         enableXfwm = true;
