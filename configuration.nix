@@ -119,6 +119,7 @@
   security.pam.services.sddm.enableGnomeKeyring = true;
 
   # Enable flatpaks.
+  xdg.portal.enable = true;
   services.flatpak.enable = true;
 
   # Define a user account.
