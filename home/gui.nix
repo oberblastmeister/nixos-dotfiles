@@ -54,4 +54,9 @@
     /*   enable = true; */
     /* }; */
   };
+
+  xdg.configFile = {
+    "dunst".source = ../files/.config/dunst;
+    "picom".source = ../files/.config/picom;
+  };
 }

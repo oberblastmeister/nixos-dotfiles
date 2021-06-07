@@ -97,7 +97,7 @@
   };
 
   services.xserver = {
-      windowManager.bspwm.enable = true;
+      /* windowManager.bspwm.enable = true; */
       desktopManager.xfce = {
         enable = true;
         enableXfwm = false;
