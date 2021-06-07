@@ -89,11 +89,10 @@
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.sddm = {
     enable = true;
-    enableHidpi = true;
   };
 
   services.xserver = {
-      /* windowManager.bspwm.enable = true; */
+      windowManager.bspwm.enable = true;
       desktopManager.xfce = {
         enable = true;
         enableXfwm = true;
