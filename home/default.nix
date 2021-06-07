@@ -2,16 +2,16 @@
 
 {
   imports = [
-    ./languages
-    ./cli.nix
-    ./vscode.nix
-    ./neovim.nix
+    /* ./languages */
+    /* ./cli.nix */
+    /* ./vscode.nix */
+    /* ./neovim.nix */
     ./git.nix
-    ./gui.nix
-    ./alacritty.nix
-    ./bspwm.nix
-    ./rofi.nix
-    ./polybar.nix
+    /* ./gui.nix */
+    /* ./alacritty.nix */
+    /* ./bspwm.nix */
+    /* ./rofi.nix */
+    /* ./polybar.nix */
     # nix-doom-emacs.hmModule
   ];
 
