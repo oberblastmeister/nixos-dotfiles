@@ -7,7 +7,7 @@
     ./vscode.nix
     ./neovim.nix
     ./git.nix
-    /* ./gui.nix */
+    ./gui.nix
     /* ./alacritty.nix */
     /* ./bspwm.nix */
     /* ./rofi.nix */
