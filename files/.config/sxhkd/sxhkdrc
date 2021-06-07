@@ -13,7 +13,7 @@ super + alt + Return
 
 # rofi
 super + d
-    launcher-alt
+    echo 'pressed super d' >> ~/sxhkd.log
 
 alt + Tab
     windows
