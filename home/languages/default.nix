@@ -4,6 +4,6 @@
   imports = [
     ./rust.nix
     ./haskell.nix
-    /* ./ocaml.nix */
+    ./ocaml.nix
   ];
 }

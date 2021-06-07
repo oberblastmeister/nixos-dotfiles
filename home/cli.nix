@@ -4,7 +4,6 @@
   programs = {
     fzf = {
       enable = true;
-      enableZshIntegration = true;
     };
     /* zsh = { */
     /*   sessionVariables = { */
