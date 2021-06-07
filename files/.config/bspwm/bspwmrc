@@ -4,6 +4,7 @@
 # ------------------- Bspwm Settings ------------------
 # -----------------------------------------------------
 # sxhkd &
+killall sxhkd
 echo 'ran' >> ~/bsp.log
 xfce4-terminal &
 
