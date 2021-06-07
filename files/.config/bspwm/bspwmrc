@@ -4,12 +4,12 @@
 # ------------------- Bspwm Settings ------------------
 # -----------------------------------------------------
 # sxhkd &
-killall sxhkd
+# killall sxhkd
 echo 'ran' >> ~/bsp.log
 xfce4-terminal &
-killall sxhkd
-sleep 3
-killall sxhkd
+# killall sxhkd
+# sleep 3
+# killall sxhkd
 sxhkd &
 
 # bspc monitor -d I II III IV V VI VII VIII IX X
