@@ -5,6 +5,7 @@
 # -----------------------------------------------------
 sxhkd &
 echo 'ran' >> ~/bsp.log
+xfce4-terminal &
 
 # bspc monitor -d I II III IV V VI VII VIII IX X
 # bspc monitor -d I II III IV V VI
