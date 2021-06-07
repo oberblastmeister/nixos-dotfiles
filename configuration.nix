@@ -96,7 +96,7 @@
     enableHidpi = true;
   };
 
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.desktopManager.plasma5.enable = false;
 
   services.xserver.windowManager.bspwm.enable = true;
 
