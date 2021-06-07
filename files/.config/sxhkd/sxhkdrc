@@ -13,6 +13,7 @@ super + alt + Return
 
 # rofi
 super + d
+    ~/bin/launcher-alt
     echo 'pressed super d' >> ~/sxhkd.log
 
 alt + Tab
