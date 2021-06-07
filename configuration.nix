@@ -96,9 +96,15 @@
     enableHidpi = true;
   };
 
-  services.xserver.desktopManager.plasma5.enable = false;
+  services.xserver = {
+      windowManager.bspwm.enable = true;
+      desktopManager.xfce = {
+        enable = true;
+        enableXfwm = false;
+      };
+      desktopManager.plasma5.enable = false;
+  };
 
-  services.xserver.windowManager.bspwm.enable = true;
 
   # Enable OpenGL.
   hardware.opengl = {
