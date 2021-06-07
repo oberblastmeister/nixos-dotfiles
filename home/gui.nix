@@ -50,9 +50,9 @@
       provider = "geoclue2";
     };
 
-    picom = {
-      enable = true;
-    };
+    /* picom = { */
+    /*   enable = true; */
+    /* }; */
   };
 
   xdg.configFile = {
