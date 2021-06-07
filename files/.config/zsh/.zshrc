@@ -88,9 +88,9 @@ zinit light softmoth/zsh-vim-mode
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=21
 export ZSH_AUTOSUGGEST_USE_ASYNC=true
 
-zinit wait lucid is-snippet light-mode blockf for \
-    /usr/share/fzf/key-bindings.zsh \
-    /usr/share/fzf/completion.zsh \
+# zinit wait lucid is-snippet light-mode blockf for \
+#     /usr/share/fzf/key-bindings.zsh \
+#     /usr/share/fzf/completion.zsh \
 
 # zinit ice lucid wait as"completion"
 # zinit snippet https://raw.githubusercontent.com/TheLocehiliosan/yadm/master/completion/yadm.zsh_completion

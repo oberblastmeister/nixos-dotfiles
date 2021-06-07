@@ -30,17 +30,17 @@ bspc rule -a Pavucontrol state=floating
 bspc config focused_border_color "#928374"
 bspc config normal_border_color "#504945"
 
-# -----------------------------------------------------
-# ------------------- Miscellaneous -------------------
-# -----------------------------------------------------
+# # -----------------------------------------------------
+# # ------------------- Miscellaneous -------------------
+# # -----------------------------------------------------
 
-YADM_CLASS=$(yadm config local.class)
-if [[ $YADM_CLASS = Laptop ]]; then
-    # pulseaudio --start
-	# autorandr --change
-    amixer -c 0 set Master playback 100% unmute
-fi
+# YADM_CLASS=$(yadm config local.class)
+# if [[ $YADM_CLASS = Laptop ]]; then
+#     # pulseaudio --start
+# 	# autorandr --change
+#     amixer -c 0 set Master playback 100% unmute
+# fi
 
-feh --bg-scale ~/.config/bspwm/monocolor.png
-~/.config/polybar/launch.sh &
-~/bin/autostart.sh &
+# feh --bg-scale ~/.config/bspwm/monocolor.png
+# ~/.config/polybar/launch.sh &
+# ~/bin/autostart.sh &
