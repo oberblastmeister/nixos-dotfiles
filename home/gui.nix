@@ -41,17 +41,17 @@
       enable = true;
     };
 
-    dunst = {
-      enable = true;
-    };
+    /* dunst = { */
+    /*   enable = true; */
+    /* }; */
 
     redshift = {
       enable = true;
       provider = "geoclue2";
     };
 
-    picom = {
-      enable = true;
-    };
+    /* picom = { */
+    /*   enable = true; */
+    /* }; */
   };
 }
