@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Get class of a wid
 get_class() {
