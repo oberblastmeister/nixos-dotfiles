@@ -139,4 +139,10 @@
 
   # allow locations
   services.geoclue2.enable = true;
+
+  environment.variables = {
+    PATH = "$HOME/.cargo/bin:$HOME/bin:$HOME/.local/share/bin";
+    VISUAL = "nvim";
+    EDITOR = "nvim";
+  };
 }
