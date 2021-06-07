@@ -24,8 +24,6 @@
     };
   };
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   # Enable networking.
   networking = {
     hostName = "nixos-desktop";
@@ -57,8 +55,6 @@
     vim
     curl
     wget
-    sxhkd
-    stow
   ];
 
   # Configure the nix package manager.
@@ -100,7 +96,7 @@
       /* windowManager.bspwm.enable = true; */
       desktopManager.xfce = {
         enable = true;
-        enableXfwm = false;
+        enableXfwm = true;
       };
       desktopManager.plasma5.enable = false;
   };

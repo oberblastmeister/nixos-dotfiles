@@ -63,5 +63,7 @@
     glow
 
     haskellPackages.greenclip
+
+    killall
   ];
 }
