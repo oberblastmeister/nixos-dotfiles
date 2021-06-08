@@ -3,6 +3,11 @@
 {
   home.packages = with pkgs; [
     neovim-nightly
+    neovim-remote
+    # some remote plugin providers
+    python39Packages.pynvim
+    nodePackages.neovim
+
     rnix-lsp
     rust-analyzer
     gopls
