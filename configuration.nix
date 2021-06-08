@@ -93,18 +93,19 @@
 
 /* services.xserver.desktopManager.xterm.enable = true; */ 
   services.xserver = {
-    desktopManager.xterm.enable = true;
+    windowManager.bspwm = {
+      enable = true;
+      sxhkd.configFile = "/home/brian/.config/sxhkd/sxhkdrc";
+    };
 
+    desktopManager.xterm.enable = true;
     displayManager = {
       defaultSession = "none+bspwm";
       lightdm = {
         enable = true;
-        greeters.tiny.enable = true;
+        /* greeters.tiny.enable = true; */
+        greeters.gtk.enable = true;
       };
-    };
-    windowManager.bspwm = {
-      enable = true;
-      sxhkd.configFile = "/home/brian/.config/sxhkd/sxhkdrc";
     };
     desktopManager.xfce = {
       enable = true;
