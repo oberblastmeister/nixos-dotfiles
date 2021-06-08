@@ -1,12 +1,18 @@
 { config, pkgs, ... }:
 
 {
+  programs.neovim = {
+    enable = true;
+    package = pkgs.neovim-nightly;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    withNodeJs = true;
+    withPython3 = true;
+  };
+
   home.packages = with pkgs; [
-    neovim-nightly
     neovim-remote
-    # some remote plugin providers
-    python39Packages.pynvim
-    nodePackages.neovim
 
     rnix-lsp
     rust-analyzer
@@ -32,6 +38,6 @@
 
     shellcheck
   ];
-  
+
   xdg.configFile."nvim".source = ../files/.config/nvim;
 }
