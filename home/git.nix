@@ -9,8 +9,6 @@
       delta = {
         enable = true;
       };
-      aliases = [
-      ];
     };
     gh = {
       enable = true;
