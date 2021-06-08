@@ -91,7 +91,10 @@
   /*   enable = true; */
   /* }; */
 
+/* services.xserver.desktopManager.xterm.enable = true; */ 
   services.xserver = {
+    desktopManager.xterm.enable = true;
+
     displayManager = {
       defaultSession = "none+bspwm";
       lightdm = {
