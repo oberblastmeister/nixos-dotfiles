@@ -3,39 +3,32 @@
 # -----------------------------------------------------
 # ------------------- Bspwm Settings ------------------
 # -----------------------------------------------------
-# sxhkd &
-# killall sxhkd
-echo 'ran' >> ~/bsp.log
 xfce4-terminal &
-# killall sxhkd
-# sleep 3
-# killall sxhkd
-# sxhkd &
 
 # bspc monitor -d I II III IV V VI VII VIII IX X
-# bspc monitor -d I II III IV V VI
+bspc monitor -d I II III IV V VI
 
-# bspc config border_width         4.5
-# bspc config window_gap          35
-# bspc config window_gap          55
-# bspc config window_gap          10
+bspc config border_width         4.5
+bspc config window_gap          35
+bspc config window_gap          55
+bspc config window_gap          10
 
-# bspc config split_ratio          0.52
-# bspc config borderless_monocle   false
-# bspc config gapless_monocle      true
-# bspc config focus_follows_pointer true
+bspc config split_ratio          0.52
+bspc config borderless_monocle   false
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
 
-# bspc rule -a Screenkey manage=off
-# bspc rule -a Zathura state=tiled
-# bspc rule -a Gimp state=floating
-# bspc rule -a Nm-connection-editor
-# bspc rule -a Emacs state=tiled
-# bspc rule -a Peek state=floating
-# bspc rule -a Todoist state=floating
-# bspc rule -a Pavucontrol state=floating
+bspc rule -a Screenkey manage=off
+bspc rule -a Zathura state=tiled
+bspc rule -a Gimp state=floating
+bspc rule -a Nm-connection-editor
+bspc rule -a Emacs state=tiled
+bspc rule -a Peek state=floating
+bspc rule -a Todoist state=floating
+bspc rule -a Pavucontrol state=floating
 
-# bspc config focused_border_color "#928374"
-# bspc config normal_border_color "#504945"
+bspc config focused_border_color "#928374"
+bspc config normal_border_color "#504945"
 
 # # -----------------------------------------------------
 # # ------------------- Miscellaneous -------------------
@@ -48,6 +41,6 @@ xfce4-terminal &
 #     amixer -c 0 set Master playback 100% unmute
 # fi
 
-# feh --bg-scale ~/.config/bspwm/monocolor.png
-# ~/.config/polybar/launch.sh &
-# ~/bin/autostart.sh &
+feh --bg-scale ~/.config/bspwm/monocolor.png
+~/.config/polybar/launch.sh &
+~/bin/autostart.sh &
