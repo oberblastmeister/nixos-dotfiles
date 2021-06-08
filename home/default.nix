@@ -12,6 +12,7 @@
     ./bspwm.nix
     ./rofi.nix
     ./polybar.nix
+    ./xorg.nix
     # nix-doom-emacs.hmModule
   ];
 
