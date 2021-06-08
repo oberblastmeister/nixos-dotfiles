@@ -98,7 +98,6 @@
       sxhkd.configFile = "/home/brian/.config/sxhkd/sxhkdrc";
     };
 
-    desktopManager.xterm.enable = true;
     displayManager = {
       defaultSession = "none+bspwm";
       lightdm = {
