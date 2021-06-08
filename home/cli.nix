@@ -32,8 +32,9 @@
     gnupg
 
     bat
-
+    vivid
     fd
+    nodePackages.insect
     # lf file manager
     lf
     neofetch
