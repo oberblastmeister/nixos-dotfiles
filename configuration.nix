@@ -103,6 +103,12 @@
       defaultSession = "none+bspwm";
       lightdm = {
         enable = true;
+        extraSeatDefaults = ''
+        user-session=none+bspwm
+        '';
+        /* extraConfig = '' */
+        
+        /* ''; */
         /* greeters.tiny.enable = true; */
         /* greeters.gtk.enable = true; */
         greeters.pantheon.enable = true;
