@@ -92,9 +92,12 @@
   /* }; */
 
   services.xserver = {
-    displayManager.lightdm = {
-      enable = true;
-      greeters.tiny.enable = true;
+    displayManager = {
+      defaultSession = "none+bspwm";
+      lightdm = {
+        enable = true;
+        greeters.tiny.enable = true;
+      };
     };
     windowManager.bspwm = {
       enable = true;
