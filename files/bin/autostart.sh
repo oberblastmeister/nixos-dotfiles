@@ -8,8 +8,8 @@ run() {
 }
 
 laptopconfigs() {
-    YADM_CLASS=$(yadm config local.class)
-    if [[ $YADM_CLASS = Laptop ]]; then
+    # YADM_CLASS=$(yadm config local.class)
+    # if [[ $YADM_CLASS = Laptop ]]; then
         # amixer -c 0 set Master playback 100% unmute
         xinput set-prop "SYNA2B31:00 06CB:CD3E Touchpad" "libinput Tapping Enabled" 1
         xinput set-prop "SYNA2B31:00 06CB:CD3E Touchpad" "libinput Natural Scrolling Enabled" 1
@@ -18,7 +18,7 @@ laptopconfigs() {
         xinput set-prop "SYNA2B31:00 06CB:CD3E Touchpad" "libinput Click Method Enabled" 0 1
         # allow two finger right click and middle click emulation
         xinput set-prop "SYNA2B31:00 06CB:CD3E Touchpad" "libinput Middle Emulation Enabled" 1
-    fi
+    # fi
 }
 
 configs() {
@@ -32,7 +32,7 @@ configs() {
 
 laptopconfigs &
 
-run picom
+# run picom
 run xfce4-power-manager
 run udiskie --tray
 run nm-applet
@@ -40,7 +40,6 @@ run flameshot
 run blueman-applet
 run system-config-printer-applet
 # run redshift-gtk
-run syncthing-gtk -m
 run greenclip daemon
 # run mailspring --background
 run unclutter --timeout 4

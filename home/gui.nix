@@ -26,6 +26,10 @@
     element-desktop
 
     system-config-printer
+    
+    betterlockscreen
+
+    jgmenu
   ];
 
   programs = {
