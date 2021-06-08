@@ -27,12 +27,15 @@
   };
 
   home.packages = with pkgs; [
-    bash
+    gawk
+    gnused
+    gnupg
 
     bat
 
     fd
-    lf # lf file manager
+    # lf file manager
+    lf
     neofetch
     onefetch
     direnv
@@ -48,6 +51,13 @@
     translate-shell
     speedtest-cli
     cht-sh
+    archiver
+    sd
+    tree
+    tmux
+    unzip
+    rsync
+    xsv
 
     micro # editor
 
