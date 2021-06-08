@@ -153,6 +153,12 @@
     shell = pkgs.zsh;
   };
 
+  # must be anebled to add to /etc/shells
+  # or lightdm won't work
+  programs = {
+    zsh.enable = true;
+  };
+
   system.stateVersion = "21.05";
 
   # allow locations
@@ -163,4 +169,5 @@
     VISUAL = "nvim";
     EDITOR = "nvim";
   };
+
 }
