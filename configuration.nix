@@ -104,7 +104,8 @@
       lightdm = {
         enable = true;
         /* greeters.tiny.enable = true; */
-        greeters.gtk.enable = true;
+        /* greeters.gtk.enable = true; */
+        greeters.pantheon.enable = true;
       };
     };
     desktopManager.xfce = {
