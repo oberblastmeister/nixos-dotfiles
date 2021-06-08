@@ -87,20 +87,24 @@
   };
 
   # Enable the KDE Desktop Environment.
-  services.xserver.displayManager.sddm = {
-    enable = true;
-  };
+  /* services.xserver.displayManager.sddm = { */
+  /*   enable = true; */
+  /* }; */
 
   services.xserver = {
-      windowManager.bspwm = {
-          enable = true;
-          sxhkd.configFile = "/home/brian/.config/sxhkd/sxhkdrc";
-      };
-      desktopManager.xfce = {
-        enable = true;
-        enableXfwm = true;
-      };
-      desktopManager.plasma5.enable = false;
+    displayManager.lightdm = {
+      enable = true;
+      greeters.tiny.enable = true;
+    };
+    windowManager.bspwm = {
+      enable = true;
+      sxhkd.configFile = "/home/brian/.config/sxhkd/sxhkdrc";
+    };
+    desktopManager.xfce = {
+      enable = true;
+      enableXfwm = true;
+    };
+    desktopManager.plasma5.enable = false;
   };
 
 
