@@ -59,6 +59,7 @@
     unzip
     rsync
     xsv
+    tokei
 
     micro # editor
 
